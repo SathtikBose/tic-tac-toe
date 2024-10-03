@@ -1,0 +1,75 @@
+body{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgreen;
+}
+.container{
+    border: 2px solid black;
+    background-color: cyan;
+    width: 540px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 540px;
+    border-radius: 8px;
+}
+.box{
+    width: 136px;
+    height: 136px;
+    margin: 4%;
+    border: 5px solid black;
+    cursor: pointer;
+    font-size:100px;
+    border-radius: 10px;
+    background-color: lightyellow;
+    box-shadow: 5px 2px 2px 0px rgba(0,0,0,0.5);
+    color: purple;
+
+}
+.restartButton{
+    margin-top: 40px;
+    width: 200px;
+    height: 60px;
+    border: 2px solid black;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.msgContainer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius:  8px;
+    height: initial;
+}
+.newGameButtonMsg{
+    width: 100px;
+    height: 40px;
+    margin: 5px;
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 5px 2px 2px 0px rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 350px;
+        height: 350px;
+    }
+    .box{
+        width: 85px;
+        height: 85px;
+        display: block;
+        font-size: 70px;
+    }
+}
